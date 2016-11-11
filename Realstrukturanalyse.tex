@@ -1,0 +1,129 @@
+\documentclass[german, % Standardmäßig deutsche Eigenarten, englisch -> english
+parskip=full, % Absätze durch Leerzeile trennen
+bibliography=totoc, % Literatur im Inhaltsverzeichnis
+%draft, % TODO: Entwurfsmodus -> entfernen für endgültige Version
+]{scrartcl}
+\usepackage{ifluatex} % zum Testen, ob LuaTeX verwendet wird
+\ifluatex
+\usepackage{fontspec} % Laden von Schriften
+\setmainfont[Mapping=tex-text]{Linux Libertine O}  % Mapping ermöglicht die Verwendung z.B. von --
+\setsansfont[Mapping=tex-text]{Linux Biolinum O}
+\usepackage{polyglossia}  % Sprachpaket
+\setdefaultlanguage[spelling=new,babelshorthands=true]{german}  % Neue Rechtschreibung und Abkürzungen
+\else % kein LuaTeX
+\usepackage[utf8]{inputenc} % Kodierung der Datei
+\usepackage[T1]{fontenc} % Vollen Umfang der Schriftzeichen
+\usepackage{lmodern}
+\usepackage[ngerman]{babel} % Sprache auf Deutsch (neue Rechtschreibung)
+%\usepackage{libertine} % Schriftart Linux Libertine/Biolinum verwenden
+\fi
+
+% Mathematik und Größen
+\usepackage{amsmath}
+\ifluatex
+\usepackage{unicode-math}
+\fi
+\usepackage[locale=DE, % deutsche Eigenarten, englisch -> US
+separate-uncertainty, % Unsicherheiten seperat
+]{siunitx}
+\usepackage{physics} % Erstellung von Gleichungen vereinfachen
+
+% Bilder einbinden
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+%\graphicspath{{bilder/}} % TODO: Pfad unter dem die Bilder gesucht werden
+
+% Gestaltung
+\usepackage{microtype}  % Mikrotypographie
+\usepackage{booktabs}  %schönere Tabellen
+\usepackage[toc]{multitoc}  %mehrspaltiges Inhaltsverzeichnis
+\usepackage{csquotes} % Anführungszeichen mit \enquote
+\usepackage{subcaption}  % Unterabbildungen a,b,c,…
+\usepackage{enumitem}  % Listen anpassen
+\setlist{itemsep=-10pt}
+\usepackage{scrpage2}  % Manipulation des Seitenstils
+% Kopf-/Fußzeilen
+\pagestyle{scrheadings}
+\clearscrheadings
+\automark{section}
+\ofoot{\pagemark}
+\ihead{\headmark}
+\setheadsepline{.5pt}
+
+\usepackage[colorlinks=true]{hyperref}  % Links und weitere PDF-Features
+
+\makeatletter 
+\renewcommand\subsection{\@startsection 
+   {subsection}{2}{0mm}%      % name, ebene, einzug 
+   {0.5\baselineskip}%            % vor-abstand 
+   {0.3\baselineskip}%            % nach-abstand 
+   {\bfseries\sffamily\large}%           % layout 
+   } 
+\makeatother 
+
+% TODO: Titel und Autor, … festlegen
+\newcommand*{\titel}{Realstrukturanalyse}
+\newcommand*{\autor}{Maximilian Obst, Thomas Adlmaier}
+\newcommand*{\abk}{RA}
+\newcommand*{\betreuer}{Dipl.-Phys. Rolf Schaarschuch}
+\newcommand*{\messung}{11.11.2016}
+\newcommand*{\ort}{Technische Universität Dresden, Institut für Strukturphysik}
+
+\hypersetup{pdfauthor={\autor}, pdftitle={\titel}} % PDF-Metadaten
+
+\titlehead{F-Praktikum \abk \hfill TU Dresden}
+\subject{Versuchsprotokoll}
+\title{\titel}
+\author{\autor}
+\date{\begin{tabular}{ll}
+Protokoll: & \today\\
+Messung: & \messung\\
+Ort: & \ort\\
+Betreuer: & \betreuer\end{tabular}}
+
+%----------------
+\begin{document}
+\begin{titlepage}
+\maketitle
+
+\begin{figure}[hb] 
+  \centering
+     \includegraphics[width=0.7\textwidth]{tomographie}
+  \caption{Fingerkuppe unter optische Kohärenztomographie	\cite{bild-tomographie}}
+  \label{fig:tomographie}
+\end{figure}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+%------------------------
+\section{Physikalische Grundlagen}
+
+
+
+\section{Durchführung}
+
+
+
+\section{Analyse}
+
+
+
+\section{Fazit}
+
+
+
+%------------------------
+
+\begin{thebibliography}{9}
+
+\bibitem{bild-tomographie}
+  http://www.zwp-online.info/sites/default/files/users/kerstin/kohaerenz3.png
+	05.11.2016
+	14:30 Uhr
+
+\end{thebibliography}
+
+\end{document}
