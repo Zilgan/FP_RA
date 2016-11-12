@@ -89,8 +89,8 @@ Betreuer: & \betreuer\end{tabular}}
 
 \begin{figure}[hb] 
   \centering
-     \includegraphics[width=0.7\textwidth]{tomographie}
-  \caption{Fingerkuppe unter optische Kohärenztomographie	\cite{bild-tomographie}}
+     \includegraphics[width=0.7\textwidth]{RA_Bild}
+  \caption{Stahl mit $0.45\,\%$ Kohlenstoffanteil	\cite{bild-ra}}
   \label{fig:tomographie}
 \end{figure}
 \end{titlepage}
@@ -101,11 +101,111 @@ Betreuer: & \betreuer\end{tabular}}
 %------------------------
 \section{Physikalische Grundlagen}
 
+In der Realstrukturanalyse werden, anders als in der Idealstrukturanalyse, wo der perfekte Aufbau von Kristallgittern untersucht wird, Abweichungen von eben diesen Gittern betrachtet. In diesem Versuch werden die Oberflächen von einem Einkristall und zwei polykristallinen Systemen untersucht und damit ein Einblick in die Probenpräparation, metallographische Analyse und Bildverarbeitung geboten.
 
+\subsection{Gitterdefekte}
+
+Gitterdefekte beschreiben Abweichungen vom perfekten Kristall. Sie werden in folgende Gruppen unterschieden: \cite{gitterfehler}
+
+\subsubsection{Nulldimensionale Gitterdefekte}
+
+Auch Punktdefekte genannt. Diese Defekte beschreiben Abweichungen an einzelnen Atompositionen:
+\begin{itemize}
+\item \textbf{Leerstellen:} Fehlende Gitteratome
+\item \textbf{Zwischengitteratome:} Zusätzliche Atome zwischen den eigentlichen Gitteratomen
+\item \textbf{Substitutionsatome:} Atome eines anderen Elementes, die anstelle der eigentlichen Gitterelementes im Gitter eingebunden sind
+\end{itemize}
+
+\subsubsection{Eindimensionale Gitterdefekte}
+
+Auch Linienfehler genannt. Hier werden Abweichungen beschrieben, die eine ganze Reihe von Atomen betreffen:
+\begin{itemize}
+\item \textbf{Stufenversetzung:} Eingeschobene Halbebenen im Kristallgitter, die zu einer Verschiebung führen
+\item \textbf{Schraubenversetzung:} Gegeneinander senkrecht halb-verschobene Ebenen im Kristall (ein Teil verschoben, der andere nicht)
+\end{itemize}
+
+\subsubsection{Zweidimensionale Gitterdefekte}
+
+Auch Flächenfehler genannt. Diese beschreiben Abweichungen, die in der Fläche beobachtet werden können:
+\begin{itemize}
+\item \textbf{Korngrenzen:} Grenzflächen zweier gegeneinander verdrehter Einkristalle
+\item \textbf{Zwillingsgrenzen:} Grenzflächen beider Teile eines Kristallzwillings
+\item \textbf{Stapelfehler:} Verschiebung der aufgestapelten Ebenen, sodass das Gitter falsch aufgebaut wird
+\item \textbf{Phasengrenzen:} Grenzflächen zweier Phasen eines polykristallinen Systems
+\end{itemize}
+
+\subsubsection{Dreidimensionale Gitterdefekte}
+
+Auch Volumenfehler oder Inklusionen genannt. Dies sind Abweichungen, die durch vollständige Fremdphasen im Kristallgitter entstehen:
+\begin{itemize}
+\item \textbf{Poren:} Hohlräume im Kristall, die mit Gas oder Flüssigkeit gefüllt sind
+\item \textbf{Einschlüsse:} Im Kristall enthaltene andere feste Materialien
+\item \textbf{Ausscheidungen:} Einschlüsse, die aus dem Kristall selbst gebildet werden
+\end{itemize}
+
+\subsection{Messing}
+
+Messing ist eine Legierung aus Kupfer und Zink. Je nach der größe der Anteile der beiden Elemente entstehen drei unterschiedliche Phasen: $\alpha$-Messing, $\beta$-Messing und $\gamma$-Messing. Dabei wird industriell hauptsächlich $\alpha$- und $\beta$-Messing hergestellt und benutzt.
+
+$\alpha$-Messing hat einen Kupfergehalt von über $62.5\,\%$ und weist eine kfz-Struktur auf. Es besitzt eine gute Formbarkeit bei Raumtermperatur und eine hohe Korrosionsbeständigkeit. Eine Anwendungsmöglichkeit ist die Verwendung als Schmuck oder Münzmaterial, auch in der Uhrenherstellung findet es Anwendung. \cite{messing}
+
+$\beta$-Messing hat einen Kupfergehalt zwischen $54$ und $62.5\,\%$ und weist eine krz-Struktur auf. Es besitzt eine gute Formbarkeit im warmen Zustand. Durch Zugabe von $0.5$ bis $3.5\,\%$ Blei erreicht $\beta$-Messing zusätzlich eine hohe Zerspanbarkeit und wird daher gerne für industrielle Bauteile verwendet.
+
+\begin{figure}[hb] 
+  \centering
+     \includegraphics[width=0.8\textwidth]{Messing_Phase}
+  \caption{Phasendiagramm von Messing}
+  \label{fig:phasemessing}
+\end{figure}
+
+\subsection{Stahl}
+
+Stahl ist eine Legierung aus Eisen und Kohlenstoff. In dieser Legierung können, in der Reihenfolge aufsteigendem Kohlenstoffgehalts, vier Phasen beobachtet werden: $\alpha$-Eisen, $\delta$-Eisen, $\gamma$-Eisen und Fe\textsubscript{3}C. Dabei hat Zementit mit einem Kohlenstoff-Masseanteil von $6.67\,\%$ die maximale Menge an Kohlenstoff, die Eisen binden kann, gebunden. 
+
+$\alpha$-Eisen, auch Ferrit genannt, hat einen maximalen Kohlenstoffgehalt von $0.02\,\%$. Die Eisenatome weisen eine krz-Struktur auf, bei der die Kohlenstoffatome zwischengelagert sind. Ferrit ist sehr weich und formbar, weist dabei eine geringe Wärmeausdehnung auf und ist ferromagnetisch. Allerings ist Ferrit nicht sehr wärmebeständig. \cite{ferrit}
+$\delta$-Eisen wird auch $\delta$-Ferrit genannt und weist die selbe Struktur wie $\alpha$-Eisen auf. Der Kohlenstoffgehalt liegt bei höchstens $0.1\,\%$. 
+$\gamma$-Eisen hat auch die Bezeichnung Austenit. Hier bilden die Eisen-Atome eine kfz-Struktur, die Kohlenstoff-Atome sind wieder zwischengelagert. Der Kohlenstoffgehalt liegt mit bis zu $2.06\,\%$ deutlich höher als bei den Ferriten. Austenit ist sehr zäh und bricht damit seltener als Ferrit. Außerdem leitet Austenit Wärme schlecht, ist paramagnetisch und bei hohen Temperaturen sehr fest. Austenit zeigt dabei aber auch eine hohe Wärmeausdehnung und eine niedrige Festigkeit bei niedrigen Temperaturen. \cite{austenit}
+Fe\textsubscript{3}C wird Zementit genannt und stellt mit $6.67\,\%$ Kohlenstoffanteil die Eisen-Kohlenstoff-Verbindung da, die die höchstmögliche Menge an Kohlenstoff bindet. Die gebildete, komplizierte Struktur besteht aus Tetraedern, in denen ein Kohlenstoff-Atom von 4 Eisen-Atomen umgeben wird. Zementit ist in nahezu allen Stählen enthalten. Dabei werden beim Stahl bestimmte Anteile von Zementit unterschieden: Perlit hat $88\,\%$ Ferrit und $12\,\%$ Zementit. Ledeburit I hat einen Austenit-Anteil von $52.4\,\%$ und einen Zementit-Anteil von $47.6\,\%$. Ledburit II schließlich hat einen Perlit-Anteil von $51.4\,\%$ und einen Zementit-Anteil von $48.6\,\%$.
+
+
+\begin{figure}[hb] 
+  \centering
+     \includegraphics[width=0.8\textwidth]{Stahl_Phase}
+  \caption{Phasendiagramm von Stahl}
+  \label{fig:phasestahl}
+\end{figure}
 
 \section{Durchführung}
 
+In diesem Versuch soll ein Silicium-Einkristall auf Stufenversetzungen sowie Messing und Stahl auf ihre Atombestandteile in Gewichtsprozent untersucht werden. Für die Untersuchung werden die Materialien geschliffen und angeätzt, um anschließend mit Auflicht-Mikroskopen betrachtet zu werden.
 
+\subsection{Silicium}
+
+Um die Versetzungsstruktur des Silicium-Einkristalls zu beobachten, muss der Kristall an geeigneten kristallographischen Flächen geläppt und chemisch angeätzt werden. Für jedes Ätzen muss der Kristall in die entsprechende Säure gehalten, danach in Wasser und destilliertem Wasser gereinigt werden um schließlich in Ethanol 3 Minuten in einem Ultraschallbad weiter gereinigt zu werden. Als letztes wird der Kristall aus dem Ethanol entnommen und so lange mit einem Heißluft-Föhn beblasen, bis er trocken ist. 
+\begin{itemize}
+\item[1.] Als erstes muss der Kristall geläppt werden. Dafür wird der Kristall an den zu bearbeitenden Flächen über eine mit Läpppulver F40 und Wasser versehene Glasplatte gerieben werden, bis die Flächen mattgrau sind.
+\item[2.] Dann wird der Kristall das erste Mal geätzt. Hier wird eine Säure aus gleichen Anteilen Fluss- und Salpetersäure verwendet und der Kristall $25\,s$ in dieser geschwenkt
+\item[3.] Nun wird der Kristall das erste Mal unter dem Mikroskop betrachtet. Dabei wird der Kristall zuerst fokussiert und dann ein Bild gemacht
+\item[4.] Als nächstes wird der Kristall das zweite Mal geätzt. Jetzt wird eine Säure aus einem Bestandteil Fluss- und fünf Bestandteilen Salpetersäure genutzt und der Kristall $30\,s$ in dieser geschwenkt
+\item[5.] Es folgt die zweite Betrachtung des Kristalls unter dem Mikroskops. Nun sollen die ersten Versetzungen gefunden und fokussiert werden. Die Versetzungen sind dabei anhand ihrer klaren geometrischen Struktur zu erkennen. Von den gefunden Versetzungen wird ein Bild gemacht
+\item[6.] Anschließend folgt die dritte Verätzung. Es wird eine Säure aus gleichen Bestandteilen Stammlösung ($50\,g$ CrO\textsubscript{3} auf 100\,ml Wasser) und Flusssäure verwendet und der Kristall $15\,s$ in dieser geschwenkt
+\item[7.] Danach wird der Kristall ein drittes Mal unter dem Mikroskop betrachtet. Dabei werden wieder die Versetzungsstellen betrachtet und fotografiert
+\end{itemize}
+
+\subsection{Messing und Stahl}
+
+Um bei Messing und Stahl die Gefügestruktur zu untersuchen, müssen geeignete metallografische Flächen geschliffen, poliert und geätzt werden. Das Schleifen und Polieren ist dabei für Messing und Stahl identisch. 
+
+\begin{itemize}
+\item[1.] Die zu betrachteten Flächen werden mit einem SiC-Papier unterschiedlicher Körnung geschliffen. Dabei wird die Größe der Schleifkörner immer weiter verkleinert: Erst wird die Körnung 500 verwendet, dann 1000 und schließlich 2000
+\item[2.] Danach werden die Flächen mit einer $3\,\mu m$ Diamantsuspension poliert, bis sie metallisch glänzen
+\end{itemize}
+
+Nun müssen die Legierungen geätzt werden, um anschließend im Mikroskop betrachtet zu werden. Nach jedem Ätzen müssen die Legierungen in Ethanol gereinigt werden um anschließend mit einem Heißluft-Föhn getrocknet zu werden. Diese Schritte werden wiederholt, bis die Bestandteile gut gesehen werden können:
+
+Messing in einem Ätzmittel aus $100\,ml$ Wasser, $30\,ml$ HCL und $5\,g$ FeCl\textsubscript{3} $25\,s$ geschwenkt, anschließend im Mikroskop fokussiert und ein Foto geschossen.
+
+Stahl wird in einer $3\,\%$igen alkoholischen Salpetersäure $10\,s$ geätzt und anschließend ebenfalls im Mikroskop fokussiert und ein Foto geschossen.
 
 \section{Analyse}
 
@@ -119,10 +219,30 @@ Betreuer: & \betreuer\end{tabular}}
 
 \begin{thebibliography}{9}
 
-\bibitem{bild-tomographie}
-  http://www.zwp-online.info/sites/default/files/users/kerstin/kohaerenz3.png
-	05.11.2016
-	14:30 Uhr
+\bibitem{ferrit}
+  https://de.wikipedia.org/wiki/Ferrit\_(Gef\%C3\%BCgebestandteil)
+	12.11.2016
+	19:30 Uhr
+	
+\bibitem{austenit}
+  https://de.wikipedia.org/wiki/Austenit\_(Gef\%C3\%BCgebestandteil)
+	12.11.2016
+	19:30 Uhr
+	
+\bibitem{gitterfehler}
+  https://de.wikipedia.org/wiki/Gitterfehler
+	12.11.2016
+	20:45 Uhr	
+	
+\bibitem{bild-ra}
+  http://www.ahoefler.de/images/maschinenbau/werkstoffkunde/eisen\_kohlenstoff\_diagramm/C45.png
+	12.11.2016
+	22:35 Uhr	
+	
+\bibitem{messing}
+  https://de.wikipedia.org/wiki/Messing
+	12.11.2016
+	22:45 Uhr	
 
 \end{thebibliography}
 
