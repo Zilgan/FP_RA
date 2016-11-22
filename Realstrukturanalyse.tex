@@ -193,7 +193,7 @@ Um die Versetzungsstruktur des Silicium-Einkristalls zu beobachten, muss der Kri
 \item[3.] Nun wird der Kristall das erste Mal unter dem Mikroskop betrachtet. Dabei wird der Kristall zuerst fokussiert und dann ein Bild gemacht
 \item[4.] Als nächstes wird der Kristall das zweite Mal geätzt. Jetzt wird eine Säure aus einem Bestandteil Fluss- und fünf Bestandteilen Salpetersäure genutzt und der Kristall $30\,s$ in dieser geschwenkt
 \item[5.] Es folgt die zweite Betrachtung des Kristalls unter dem Mikroskops. Nun sollen die ersten Versetzungen gefunden und fokussiert werden. Die Versetzungen sind dabei anhand ihrer klaren geometrischen Struktur zu erkennen. Von den gefunden Versetzungen wird ein Bild gemacht
-\item[6.] Anschließend folgt die dritte Verätzung. Es wird eine Säure aus gleichen Bestandteilen Stammlösung ($50\,g$ CrO\textsubscript{3} auf 100\,ml Wasser) und Flusssäure verwendet und der Kristall $15\,s$ in dieser geschwenkt
+\item[6.] Anschließend folgt die dritte Verätzung. Es wird eine Säure aus gleichen Bestandteilen Stammlösung (\(\SI{50}{\gram}\) CrO\textsubscript{3} auf \(\SI{100}{\milli\liter}\) Wasser) und Flusssäure verwendet und der Kristall $15\,s$ in dieser geschwenkt
 \item[7.] Danach wird der Kristall ein drittes Mal unter dem Mikroskop betrachtet. Dabei werden wieder die Versetzungsstellen betrachtet und fotografiert
 \end{itemize}
 
@@ -203,14 +203,14 @@ Um bei Messing und Stahl die Gefügestruktur zu untersuchen, müssen geeignete m
 
 \begin{itemize}
 \item[1.] Die zu betrachteten Flächen werden mit einem SiC-Papier unterschiedlicher Körnung geschliffen. Dabei wird die Größe der Schleifkörner immer weiter verkleinert: Erst wird die Körnung 500 verwendet, dann 1000 und schließlich 2000
-\item[2.] Danach werden die Flächen mit einer $3\,\mu m$ Diamantsuspension poliert, bis sie metallisch glänzen
+\item[2.] Danach werden die Flächen mit einer \(\SI{3}{\micro\meter}\) Diamantsuspension poliert, bis sie metallisch glänzen
 \end{itemize}
 
 Nun müssen die Legierungen geätzt werden, um anschließend im Mikroskop betrachtet zu werden. Nach jedem Ätzen müssen die Legierungen in Ethanol gereinigt werden um anschließend mit einem Heißluft-Föhn getrocknet zu werden. Diese Schritte werden wiederholt, bis die Bestandteile gut gesehen werden können:
 
-Messing in einem Ätzmittel aus $100\,ml$ Wasser, $30\,ml$ HCL und $5\,g$ FeCl\textsubscript{3} $25\,s$ geschwenkt, anschließend im Mikroskop fokussiert und ein Foto geschossen.
+Messing in einem Ätzmittel aus \(\SI{100}{\milli\liter}\) Wasser, \(\SI{30}{\milli\liter}\) HCL und $5\,g$ FeCl\textsubscript{3} $25\,s$ geschwenkt, anschließend im Mikroskop fokussiert und ein Foto geschossen.
 
-Stahl wird in einer $3\,\%$igen alkoholischen Salpetersäure $10\,s$ geätzt und anschließend ebenfalls im Mikroskop fokussiert und ein Foto geschossen.
+Stahl wird in einer $3\,\%$igen alkoholischen Salpetersäure \(\SI{10}{\second}\) geätzt und anschließend ebenfalls im Mikroskop fokussiert und ein Foto geschossen.
 
 \section{Analyse}
 
@@ -259,12 +259,35 @@ Nach dem dritten und letzten Arbeitsschritt verändert sich das Aussehen nicht m
   \label{fig:linana}
 \end{figure}
 
-In diesem Bild wird auch die Analyse durchgeführt. Ein Ausmessen der Dreiecke mit einem Bildverarbeitungsprogramm ergibt, dass die Seitenlängen der Dreiecke zwischen $4 \mu m$ und $14 \mu m$ schwankt. Mit der Durchführung einer Linearanalyse gelangt man zu folgendem Schluss:
+In diesem Bild wird auch die Analyse durchgeführt. Ein Ausmessen der Dreiecke mit einem Bildverarbeitungsprogramm ergibt, dass die Seitenlängen der Dreiecke zwischen \(\SI{4}{\micro\meter}\) und \(\SI{14}{\micro\meter}\) schwankt. Mit der Durchführung einer Linearanalyse gelangt man zu folgendem Schluss:
 \begin{align*}
 L_L = 0.0714
 \end{align*}
-
 Dies gilt dabei nur für das betrachtete Bild und nicht für den gesamten Kristall! Bei der Durchführung konnte beobachtetet werden, dass die meisten Stellen der einen betrachteten Oberflächen keinerlei Versetzungen aufweisen, die andere betrachtete Oberfläche besaß keine einzige Versetzung. Daher liegt der wahre Wert für L\textsubscript{L} viel geringer. In Bild \ref{fig:linana} kann die angewandte Methode der Linearanalyse nachvollzogen werden.
+
+\begin{figure}[ht] 
+  \centering
+     \includegraphics[width=0.8\textwidth]{Silicium_3_50_mal_verkippung}
+  \caption{Bestimmung des Verkippungswinkels}
+  \label{fig:verkippung}
+\end{figure}
+
+Zur Bestimmung des Verkippungswinkels zwischen den Subkörnern wird die unten im Bild erkennbare, kurze, gerade Linie von Versetzungen oben und unten vermessen, wie in Bild \ref{fig:verkippung} zu sehen ist. Zusätzlich wird die Zahl der an der Linie beteiligten Versetzungen bestimmt. Dann wird die Weglänge je Versetzung mit der Formel \ref{for:lversetzung} bestimmt.
+\begin{align}
+D_{Versetzung} = \frac{l_{oben} + l_{unten}}{2} \frac{1}{N_{Versetzungen}} \label{for:lversetzung}
+\end{align}
+Das Ergebnis in Mikrometern lautet wie folgt:
+\begin{align*}
+D_{Versetzung} = (1.9 \pm 0.4) \mu m
+\end{align*}
+Der Burgersvektor $b_{Silizium}$ von Silicium wird der Literatur entnommen und beträgt ??? \cite{kittel}. Mit diesen beiden Werten und der Formel \ref{for:verkippung} kann der Verkippungswinkel bestimmt werden.
+\begin{align}
+\Theta_{Verkippung} = \frac{b_{Silizium}}{D_{Versetzung}} \label{for:verkippung}
+\end{align}
+Man erhält folgendes Ergebnis:
+\begin{align*}
+\Theta_{Verkippung} =
+\end{align*}
 
 \section{Fazit}
 
@@ -302,6 +325,13 @@ Der untersuchte Silicium-Einkristall hat eine sehr geringe Versetzungsdichte.
   https://de.wikipedia.org/wiki/Messing
 	12.11.2016
 	22:45 Uhr	
+	
+\bibitem{kittel}
+  Charles Kittel,
+  \emph{Einführung in die Festkörperphysik},
+  Oldenbourg, München,
+  15., unveränd. Aufl.,
+  2013.
 
 \end{thebibliography}
 

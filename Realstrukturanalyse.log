@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.14)  13 NOV 2016 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.14)  22 NOV 2016 17:17
 entering extended mode
 **./Realstrukturanalyse.tex
 (Realstrukturanalyse.tex
@@ -2367,6 +2367,214 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 200.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 200.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 206.
+ (P:\MiKTeX\tex\latex\lm\ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textquotestraightbase '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textquotestraightdblbase '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttwelveudash '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textthreequartersemdash '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textquotesingle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textasteriskcentered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textoneoldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textthreeoldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textfouroldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textsevenoldstyle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textlangle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textrangle '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textminus '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttildelow '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdagger '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdaggerdbl '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textbullet '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcelsius '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcolonmonetary '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttrademark '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textcopyright '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textordfeminine '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textlnot '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textregistered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdegree '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textpm '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttwosuperior '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textthreesuperior '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textperiodcentered '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textonesuperior '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textordmasculine '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texteuro '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\texttimes '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\textdiv '
+(microtype)                in font encoding `TS1' in protrusion list
+(microtype)                `cmr-textcomp'.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 210.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2375,7 +2583,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 210.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 210.
- [7]
+[7]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 215.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2384,13 +2592,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 217.
- <Silicium_1_12.png, id=148, 912.208pt x 684.156pt>
+ <Silicium_1_12.png, id=149, 912.208pt x 684.156pt>
 File: Silicium_1_12.png Graphic file (type png)
  <use Silicium_1_12.png>
 Package pdftex.def Info: Silicium_1_12.png used on input line 221.
 (pdftex.def)             Requested size: 334.60571pt x 250.95192pt.
 
-<Silicium_2_25.png, id=150, 912.208pt x 684.156pt>
+<Silicium_2_25.png, id=151, 912.208pt x 684.156pt>
 File: Silicium_2_25.png Graphic file (type png)
  <use Silicium_2_25.png>
 Package pdftex.def Info: Silicium_2_25.png used on input line 230.
@@ -2404,101 +2612,115 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 236.
  [8 <./Silicium_1_12.png (PNG copy)>]
-<Silicium_2_50.png, id=157, 912.208pt x 684.156pt>
+<Silicium_2_50.png, id=158, 912.208pt x 684.156pt>
 File: Silicium_2_50.png Graphic file (type png)
  <use Silicium_2_50.png>
 Package pdftex.def Info: Silicium_2_50.png used on input line 239.
 (pdftex.def)             Requested size: 334.60571pt x 250.95192pt.
 
-<Silicium_3_50.png, id=159, 912.208pt x 684.156pt>
+<Silicium_3_50.png, id=160, 912.208pt x 684.156pt>
 File: Silicium_3_50.png Graphic file (type png)
  <use Silicium_3_50.png>
 Package pdftex.def Info: Silicium_3_50.png used on input line 248.
 (pdftex.def)             Requested size: 334.60571pt x 250.95192pt.
 
-<Silicium_3_50_mal2.png, id=161, 456.5055pt x 342.078pt>
+<Silicium_3_50_mal2.png, id=162, 456.5055pt x 342.078pt>
 File: Silicium_3_50_mal2.png Graphic file (type png)
  <use Silicium_3_50_mal2.png>
 Package pdftex.def Info: Silicium_3_50_mal2.png used on input line 257.
 (pdftex.def)             Requested size: 334.60571pt x 250.73268pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 267.
  [9 <./Silicium_2_25.png>]
+<Silicium_3_50_mal_verkippung.png, id=175, 912.208pt x 684.156pt>
+File: Silicium_3_50_mal_verkippung.png Graphic file (type png)
+ <use Silicium_3_50_mal_verkippung.png>
+Package pdftex.def Info: Silicium_3_50_mal_verkippung.png used on input line 270.
+(pdftex.def)             Requested size: 334.60571pt x 250.95192pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 290.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 290.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 290.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 290.
+ [10 <./Silicium_2_50.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 292.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 292.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 302.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 302.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 310--313
 []\T1/lmr/m/n/10.95 (+20) https://de.wikipedia.org/wiki/Austenit_(Gef%C3%BCgebestandteil) 12.11.2016
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 319.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 319.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 319.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 290.
-[10 <./Silicium_2_50.png>]
-Overfull \hbox (78.7537pt too wide) in paragraph at lines 297--300
+(babel)             in language  on input line 319.
+[11 <./Silicium_3_50.png (PNG copy)>]
+Overfull \hbox (78.7537pt too wide) in paragraph at lines 320--323
 []\T1/lmr/m/n/10.95 (-20) http://www.ahoefler.de/images/maschinenbau/werkstoffkunde/eisen_kohlenstoff_diagramm/C45.png
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 308.
-[11 <./Silicium_3_50.png (PNG copy)>]
+(babel)             in language  on input line 338.
+[12 <./Silicium_3_50_mal2.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 308.
- [12 <./Silicium_3_50_mal2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
+(babel)             in language  on input line 338.
+ [13 <./Silicium_3_50_mal_verkippung.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (Realstrukturanalyse.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `Realstrukturanalyse.out' has not changed.
-(rerunfilecheck)             Checksum: 97F80A54AD2628D037D7C0F679365FD5;1024.
+(rerunfilecheck)             Checksum: 11CAC43BAF3D215581EFD68DAD84A7EF;1024.
  ) 
 Here is how much of TeX's memory you used:
- 23373 strings out of 493334
- 431409 string characters out of 3147000
- 612789 words of memory out of 3000000
- 26490 multiletter control sequences out of 15000+200000
- 80572 words of font info for 104 fonts, out of 3000000 for 9000
+ 23462 strings out of 493334
+ 433167 string characters out of 3147000
+ 612953 words of memory out of 3000000
+ 26554 multiletter control sequences out of 15000+200000
+ 99280 words of font info for 119 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,52p,10434b,937s stack positions out of 5000i,500n,10000p,200000b,50000s
-{P:/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-m
-athsy.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<P:/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><P:/MiKTeX/fonts/type1/pub
-lic/lm/lmbx12.pfb><P:/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><P:/MiKTeX/font
-s/type1/public/lm/lmr10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr12.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr8.pfb><P:/MiK
-TeX/fonts/type1/public/lm/lmro10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmsy
-10.pfb>
-Output written on Realstrukturanalyse.pdf (12 pages, 19184915 bytes).
+ 41i,11n,52p,10434b,935s stack positions out of 5000i,500n,10000p,200000b,50000s
+{P:/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-t
+s1.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<P:/MiKTeX/fonts/type1/public
+/lm/lmbx10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><P:/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><P:/MiKTeX/fonts/
+type1/public/lm/lmmi8.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr12.pfb><P:/MiKT
+eX/fonts/type1/public/lm/lmr8.pfb><P:/MiKTeX/fonts/type1/public/lm/lmri10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmro10.pf
+b><P:/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Realstrukturanalyse.pdf (13 pages, 22241926 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 25769 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 30382 words of extra memory for PDF output out of 35830 (max. 10000000)
 
