@@ -278,24 +278,43 @@ D_{Versetzung} = \frac{l_{oben} + l_{unten}}{2} \frac{1}{N_{Versetzungen}} \labe
 \end{align}
 Das Ergebnis in Mikrometern lautet wie folgt:
 \begin{align*}
-D_{Versetzung} = (1.9 \pm 0.4) \mu m
+D_{Versetzung} = \SI[separate-uncertainty = true]{1.9(4)}{\micro\meter}
 \end{align*}
-Der Burgersvektor $b_{Silizium}$ von Silicium wird der Literatur entnommen und beträgt ??? \cite{kittel}. Mit diesen beiden Werten und der Formel \ref{for:verkippung} kann der Verkippungswinkel bestimmt werden.
+Der Burgersvektor $b_{Silizium}$ von Silicium wird mithilfe der Formel \ref{for:burgers} berechnet. Dabei wird genutzt, dass der Kristall, wie oben beschrieben, in (1,1,1)-Richtung gezogen wurde und Silizium eine Gitterkonstant von $a = \SI{5.430}{\angstrom}$ \cite[S.24]{kittel}. Somit gilt $h = k = l = 1$. Mit diesen beiden Werten und der Formel \ref{for:verkippung} kann der Verkippungswinkel bestimmt werden \cite[S.661]{kittel}.
+\begin{align}
+b_{Silizium} = \frac{a_{Silizium}}{2}\sqrt{h^2+k^2+l^2} \label{for:burgers}
+\end{align}
 \begin{align}
 \Theta_{Verkippung} = \frac{b_{Silizium}}{D_{Versetzung}} \label{for:verkippung}
 \end{align}
-Man erhält folgendes Ergebnis:
+Man erhält folgende Ergebnisse:
 \begin{align*}
-\Theta_{Verkippung} =
+b_{Silizium} = \SI{4.7025}{\angstrom}
+\end{align*}
+\begin{align*}
+\Theta_{Verkippung} = \SI[separate-uncertainty = true]{0.0142(30)}{\degree}
 \end{align*}
 
+Dieser Verkippungswinkel ist sehr klein. Allerdings ist das Ergebnis auch nicht sehr genau, da die vermessene Linie von Versetzungen nur sehr klein war und deswegen die Mittelung über die Strecke einen großen Fehler erbringt. 
+
 \section{Fazit}
+
+\subsection{Silizium}
 
 \begin{align*}
 L_L = 0.0714
 \end{align*}
+\begin{align*}
+\Theta_{Verkippung} = \SI[separate-uncertainty = true]{0.0142(30)}{\degree}
+\end{align*}
 
-Der untersuchte Silicium-Einkristall hat eine sehr geringe Versetzungsdichte.
+Der untersuchte Silicium-Einkristall hat an der untersuchten Stelle eine Versetzungsdichte von 7,714\,\%. Dieser Wert liegt jedoch im Gesamtkristall weitaus niedriger. Um einen möglichst genauen Wert zu erhalten, müsste eine größere Fläche untersucht werden: Beispielsweise, indem die gesamte betrachtete Kristalloberfläche fotografiert und vermessen wird.
+
+Der bestimmte Verkippungswinkel ist sehr gering. Leider ist das Ergebnis nur ungenau, denn die betrachtete Reihe an Versetzungen war nur sehr klein. Da sich auf der gesamten betrachteten Fläche keine bessere Linie fand, hätte der Versuch wiederholt werden müssen, bis eine längere und klarere Linie zu finden ist, um eine bessere Auswertung zu ermöglichen.
+
+\subsection{Messing}
+
+\subsection{Stahl}
 
 %------------------------
 
@@ -330,8 +349,13 @@ Der untersuchte Silicium-Einkristall hat eine sehr geringe Versetzungsdichte.
   Charles Kittel,
   \emph{Einführung in die Festkörperphysik},
   Oldenbourg, München,
-  15., unveränd. Aufl.,
-  2013.
+  14., unveränd. Aufl.,
+  2005.
+  
+\bibitem{burgers}
+  https://en.wikipedia.org/wiki/Burgers\_vector
+	23.11.2016
+	14:45 Uhr
 
 \end{thebibliography}
 

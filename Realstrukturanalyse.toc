@@ -14,4 +14,7 @@
 \contentsline {section}{\numberline {3}Analyse}{8}{section.3}
 \contentsline {subsection}{\numberline {3.1}Silicium}{8}{subsection.3.1}
 \contentsline {section}{\numberline {4}Fazit}{11}{section.4}
-\contentsline {section}{\nonumberline Literatur}{11}{section*.11}
+\contentsline {subsection}{\numberline {4.1}Silizium}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Messing}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Stahl}{13}{subsection.4.3}
+\contentsline {section}{\nonumberline Literatur}{13}{section*.11}
