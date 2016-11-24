@@ -37,7 +37,7 @@ separate-uncertainty, % Unsicherheiten seperat
 % Gestaltung
 \usepackage{microtype}  % Mikrotypographie
 \usepackage{booktabs}  %schönere Tabellen
-\usepackage[toc]{multitoc}  %mehrspaltiges Inhaltsverzeichnis
+%\usepackage[toc]{multitoc}  %mehrspaltiges Inhaltsverzeichnis
 \usepackage{csquotes} % Anführungszeichen mit \enquote
 \usepackage{subcaption}  % Unterabbildungen a,b,c,…
 \usepackage{enumitem}  % Listen anpassen
@@ -103,11 +103,47 @@ Betreuer: & \betreuer\end{tabular}}
 
 In der Realstrukturanalyse werden, anders als in der Idealstrukturanalyse, wo der perfekte Aufbau von Kristallgittern untersucht wird, Abweichungen von eben diesen Gittern betrachtet. In diesem Versuch werden die Oberflächen von einem Einkristall und zwei polykristallinen Systemen untersucht und damit ein Einblick in die Probenpräparation, metallographische Analyse und Bildverarbeitung geboten.
 
+\subsection{Kristallgitter}
+
+Ein idealer Kristall kann vollständig durch ein periodisches Kristallgitter beschrieben werden. Dabei sieht das Gitter von jedem Punkt im Kristall gleich aus. Meistens werden die Bravais-Gitter verwendet.
+
+\subsubsection{Bravais-Gitter und Millersche Indizes}
+
+Bei einem Bravais-Gitter geht man davon aus, dass ein Kristall aus Gitterpunkten besteht, die ein oder mehrere Atome umfassen können. Jeder Gitterpunkt kann über die Gittervektoren $a_i$ und die ganzen Zahlen $u$, $v$, und $w$ erreicht werden. Formel \ref{for:bravais} zeigt den Ansatz dafür.
+\begin{align}
+R = ua_1 + va_2 + wa_3 \label{for:bravais}
+\end{align}
+
+\begin{figure}[ht] 
+  \centering
+     \includegraphics[width=0.8\textwidth]{KubischeGitter}
+  \caption{Kubische Kristallgitter \cite{kubisch}}
+  \label{fig:gitter}
+\end{figure}
+
+In diesem Versuch interessieren vor allem die kubischen Kristallgitter, die in Bild \ref{fig:gitter} gesehen werden können. Bei diesen gilt, dass alle $a_i$ gleich groß sind. 
+
+\begin{figure}[ht] 
+  \centering
+     \includegraphics[width=0.8\textwidth]{Miller}
+  \caption{Ebenen und ihre Beschreibung durch Millersche Indizes im kubischen Kristallgitter \cite{miller}}
+  \label{fig:miller}
+\end{figure}
+
+Die Millerschen Indizes $h$, $k$ und $l$ beschreiben parallel zu $u$, $v$ und $w$ den reziproken Gittervektor, der senkrecht auf den Gitterebenen steht. Sie werden meistens verwendet, um Gitterebenen zu beschreiben. Für kubische Kristallgitter ist dies in Bild \ref{fig:miller} dargestellt.
+
 \subsection{Gitterdefekte}
 
-Gitterdefekte beschreiben Abweichungen vom perfekten Kristall. Sie werden in folgende Gruppen unterschieden: \cite{gitterfehler}
+In einem realen Kristall existiert nicht überall das perfekte Kristallgitter. Gitterdefekte beschreiben Abweichungen davon. Sie werden in folgende Gruppen unterschieden: \cite{gitterfehler}
 
 \subsubsection{Nulldimensionale Gitterdefekte}
+
+\begin{figure}[ht] 
+  \centering
+     \includegraphics[width=0.8\textwidth]{Gitterfehler}
+  \caption{Mögliche Punktdefekte \cite{gitterfehler2}}
+  \label{fig:gitterdefekte}
+\end{figure}
 
 Auch Punktdefekte genannt. Diese Defekte beschreiben Abweichungen an einzelnen Atompositionen:
 \begin{itemize}
@@ -115,14 +151,23 @@ Auch Punktdefekte genannt. Diese Defekte beschreiben Abweichungen an einzelnen A
 \item \textbf{Zwischengitteratome:} Zusätzliche Atome zwischen den eigentlichen Gitteratomen
 \item \textbf{Substitutionsatome:} Atome eines anderen Elementes, die anstelle der eigentlichen Gitterelementes im Gitter eingebunden sind
 \end{itemize}
+Im Bild \ref{fig:gitterdefekte} sind die Punktdefekte noch einmal dargestellt.
 
 \subsubsection{Eindimensionale Gitterdefekte}
+
+\begin{figure}[ht] 
+  \centering
+     \includegraphics[width=0.8\textwidth]{Stufenversetzung}
+  \caption{Auswirkungen der Stufenversetzung im Kristall \cite{versetzung}}
+  \label{fig:versetzung}
+\end{figure}
 
 Auch Linienfehler genannt. Hier werden Abweichungen beschrieben, die eine ganze Reihe von Atomen betreffen:
 \begin{itemize}
 \item \textbf{Stufenversetzung:} Eingeschobene Halbebenen im Kristallgitter, die zu einer Verschiebung führen
 \item \textbf{Schraubenversetzung:} Gegeneinander senkrecht halb-verschobene Ebenen im Kristall (ein Teil verschoben, der andere nicht)
 \end{itemize}
+Im Bild \ref{fig:versetzung} wird die für den Versuch besonders wichtige Stufenversetzung noch einmal dargestellt.
 
 \subsubsection{Zweidimensionale Gitterdefekte}
 
@@ -153,9 +198,9 @@ Die Elementarzelle der Diamantstruktur besteht aus einer kfz-Strukur mit einer B
 
 Messing ist eine Legierung aus Kupfer und Zink. Je nach der größe der Anteile der beiden Elemente entstehen drei unterschiedliche Phasen: $\alpha$-Messing, $\beta$-Messing und $\gamma$-Messing. Dabei wird industriell hauptsächlich $\alpha$- und $\beta$-Messing hergestellt und benutzt.
 
-$\alpha$-Messing hat einen Kupfergehalt von über $62.5\,\%$ und weist eine kfz-Struktur auf. Es besitzt eine gute Formbarkeit bei Raumtermperatur und eine hohe Korrosionsbeständigkeit. Eine Anwendungsmöglichkeit ist die Verwendung als Schmuck oder Münzmaterial, auch in der Uhrenherstellung findet es Anwendung. \cite{messing}
+$\alpha$-Messing hat einen Kupfergehalt von über 62.5\,\% und weist eine kfz-Struktur auf. Dabei sind die Kupfer- und Zinkatome regellos im Gitter verteilt. $\alpha$-Messing besitzt eine gute Formbarkeit bei Raumtermperatur und eine hohe Korrosionsbeständigkeit. Eine Anwendungsmöglichkeit ist die Verwendung als Schmuck oder Münzmaterial, auch in der Uhrenherstellung findet es Anwendung. \cite{messing}
 
-$\beta$-Messing hat einen Kupfergehalt zwischen $54$ und $62.5\,\%$ und weist eine krz-Struktur auf. Es besitzt eine gute Formbarkeit im warmen Zustand. Durch Zugabe von $0.5$ bis $3.5\,\%$ Blei erreicht $\beta$-Messing zusätzlich eine hohe Zerspanbarkeit und wird daher gerne für industrielle Bauteile verwendet.
+$\beta$-Messing hat einen Kupfergehalt zwischen 54 und 62.5\,\% und weist eine krz-Struktur auf. Hier sind die Kupfer- und Zinkatome ebenfalls regellos verteilt, allerdings zwischen \SI{454}{\degree}C und \SI{468}{\degree}C eine Umformung in die $\beta$'-Phase auf, bei der das Zinkatom immer in der Mitte der Kristallzelle sitzt. $\beta$-Messing besitzt eine gute Formbarkeit im warmen Zustand. Durch Zugabe von 0.5 bis 3.5\,\% Blei erreicht $\beta$-Messing zusätzlich eine hohe Zerspanbarkeit und wird daher gerne für industrielle Bauteile verwendet.
 
 \begin{figure}[hb] 
   \centering
@@ -166,12 +211,12 @@ $\beta$-Messing hat einen Kupfergehalt zwischen $54$ und $62.5\,\%$ und weist ei
 
 \subsection{Stahl}
 
-Stahl ist eine Legierung aus Eisen und Kohlenstoff. In dieser Legierung können, in der Reihenfolge aufsteigendem Kohlenstoffgehalts, vier Phasen beobachtet werden: $\alpha$-Eisen, $\delta$-Eisen, $\gamma$-Eisen und Fe\textsubscript{3}C. Dabei hat Zementit mit einem Kohlenstoff-Masseanteil von $6.67\,\%$ die maximale Menge an Kohlenstoff, die Eisen binden kann, gebunden. 
+Stahl ist eine Legierung aus Eisen und Kohlenstoff. In dieser Legierung können, in der Reihenfolge aufsteigendem Kohlenstoffgehalts, vier Phasen beobachtet werden: $\alpha$-Eisen, $\delta$-Eisen, $\gamma$-Eisen und Fe\textsubscript{3}C. Dabei hat Zementit mit einem Kohlenstoff-Masseanteil von 6.67\,\% die maximale Menge an Kohlenstoff, die Eisen binden kann, gebunden. 
 
-$\alpha$-Eisen, auch Ferrit genannt, hat einen maximalen Kohlenstoffgehalt von $0.02\,\%$. Die Eisenatome weisen eine krz-Struktur auf, bei der die Kohlenstoffatome zwischengelagert sind. Ferrit ist sehr weich und formbar, weist dabei eine geringe Wärmeausdehnung auf und ist ferromagnetisch. Allerings ist Ferrit nicht sehr wärmebeständig. \cite{ferrit}
-$\delta$-Eisen wird auch $\delta$-Ferrit genannt und weist die selbe Struktur wie $\alpha$-Eisen auf. Der Kohlenstoffgehalt liegt bei höchstens $0.1\,\%$. 
-$\gamma$-Eisen hat auch die Bezeichnung Austenit. Hier bilden die Eisen-Atome eine kfz-Struktur, die Kohlenstoff-Atome sind wieder zwischengelagert. Der Kohlenstoffgehalt liegt mit bis zu $2.06\,\%$ deutlich höher als bei den Ferriten. Austenit ist sehr zäh und bricht damit seltener als Ferrit. Außerdem leitet Austenit Wärme schlecht, ist paramagnetisch und bei hohen Temperaturen sehr fest. Austenit zeigt dabei aber auch eine hohe Wärmeausdehnung und eine niedrige Festigkeit bei niedrigen Temperaturen. \cite{austenit}
-Fe\textsubscript{3}C wird Zementit genannt und stellt mit $6.67\,\%$ Kohlenstoffanteil die Eisen-Kohlenstoff-Verbindung da, die die höchstmögliche Menge an Kohlenstoff bindet. Die gebildete, komplizierte Struktur besteht aus Tetraedern, in denen ein Kohlenstoff-Atom von 4 Eisen-Atomen umgeben wird. Zementit ist in nahezu allen Stählen enthalten. Dabei werden beim Stahl bestimmte Anteile von Zementit unterschieden: Perlit hat $88\,\%$ Ferrit und $12\,\%$ Zementit. Ledeburit I hat einen Austenit-Anteil von $52.4\,\%$ und einen Zementit-Anteil von $47.6\,\%$. Ledburit II schließlich hat einen Perlit-Anteil von $51.4\,\%$ und einen Zementit-Anteil von $48.6\,\%$.
+$\alpha$-Eisen, auch Ferrit genannt, hat einen maximalen Kohlenstoffgehalt von 0.02\,\%. Die Eisenatome weisen eine krz-Struktur auf, bei der die Kohlenstoffatome zwischengelagert sind. Ferrit ist sehr weich und formbar, weist dabei eine geringe Wärmeausdehnung auf und ist ferromagnetisch. Allerings ist Ferrit nicht sehr wärmebeständig. \cite{ferrit}
+$\delta$-Eisen wird auch $\delta$-Ferrit genannt und weist die selbe Struktur wie $\alpha$-Eisen auf. Der Kohlenstoffgehalt liegt bei höchstens 0.1\,\%. 
+$\gamma$-Eisen hat auch die Bezeichnung Austenit. Hier bilden die Eisen-Atome eine kfz-Struktur, die Kohlenstoff-Atome sind wieder zwischengelagert. Der Kohlenstoffgehalt liegt mit bis zu 2.06\,\% deutlich höher als bei den Ferriten. Austenit ist sehr zäh und bricht damit seltener als Ferrit. Außerdem leitet Austenit Wärme schlecht, ist paramagnetisch und bei hohen Temperaturen sehr fest. Austenit zeigt dabei aber auch eine hohe Wärmeausdehnung und eine niedrige Festigkeit bei niedrigen Temperaturen. \cite{austenit}
+Fe\textsubscript{3}C wird Zementit genannt und stellt mit 6.67\,\% Kohlenstoffanteil die Eisen-Kohlenstoff-Verbindung da, die die höchstmögliche Menge an Kohlenstoff bindet. Die gebildete, komplizierte Struktur besteht aus Tetraedern, in denen ein Kohlenstoff-Atom von 4 Eisen-Atomen umgeben wird. Zementit ist in nahezu allen Stählen enthalten. Dabei werden beim Stahl bestimmte Anteile von Zementit unterschieden: Perlit hat 88\,\% Ferrit und 12\,\% Zementit. Ledeburit I hat einen Austenit-Anteil von $52.4\,\%$ und einen Zementit-Anteil von 47.6\,\%. Ledeburit II schließlich hat einen Perlit-Anteil von 51.4\,\% und einen Zementit-Anteil von 48.6\,\%.
 
 \begin{figure}[hb] 
   \centering
@@ -189,9 +234,9 @@ In diesem Versuch soll ein Silicium-Einkristall auf Stufenversetzungen sowie Mes
 Um die Versetzungsstruktur des Silicium-Einkristalls zu beobachten, muss der Kristall an geeigneten kristallographischen Flächen geläppt und chemisch angeätzt werden. Für jedes Ätzen muss der Kristall in die entsprechende Säure gehalten, danach in Wasser und destilliertem Wasser gereinigt werden um schließlich in Ethanol 3 Minuten in einem Ultraschallbad weiter gereinigt zu werden. Als letztes wird der Kristall aus dem Ethanol entnommen und so lange mit einem Heißluft-Föhn beblasen, bis er trocken ist. 
 \begin{itemize}
 \item[1.] Als erstes muss der Kristall geläppt werden. Dafür wird der Kristall an den zu bearbeitenden Flächen über eine mit Läpppulver F40 und Wasser versehene Glasplatte gerieben werden, bis die Flächen mattgrau sind.
-\item[2.] Dann wird der Kristall das erste Mal geätzt. Hier wird eine Säure aus gleichen Anteilen Fluss- und Salpetersäure verwendet und der Kristall $25\,s$ in dieser geschwenkt
+\item[2.] Dann wird der Kristall das erste Mal geätzt. Hier wird eine Säure aus gleichen Anteilen Fluss- und Salpetersäure verwendet und der Kristall \(\SI{25}{\second}\) in dieser geschwenkt
 \item[3.] Nun wird der Kristall das erste Mal unter dem Mikroskop betrachtet. Dabei wird der Kristall zuerst fokussiert und dann ein Bild gemacht
-\item[4.] Als nächstes wird der Kristall das zweite Mal geätzt. Jetzt wird eine Säure aus einem Bestandteil Fluss- und fünf Bestandteilen Salpetersäure genutzt und der Kristall $30\,s$ in dieser geschwenkt
+\item[4.] Als nächstes wird der Kristall das zweite Mal geätzt. Jetzt wird eine Säure aus einem Bestandteil Fluss- und fünf Bestandteilen Salpetersäure genutzt und der Kristall \(\SI{30}{\second}\) in dieser geschwenkt
 \item[5.] Es folgt die zweite Betrachtung des Kristalls unter dem Mikroskops. Nun sollen die ersten Versetzungen gefunden und fokussiert werden. Die Versetzungen sind dabei anhand ihrer klaren geometrischen Struktur zu erkennen. Von den gefunden Versetzungen wird ein Bild gemacht
 \item[6.] Anschließend folgt die dritte Verätzung. Es wird eine Säure aus gleichen Bestandteilen Stammlösung (\(\SI{50}{\gram}\) CrO\textsubscript{3} auf \(\SI{100}{\milli\liter}\) Wasser) und Flusssäure verwendet und der Kristall $15\,s$ in dieser geschwenkt
 \item[7.] Danach wird der Kristall ein drittes Mal unter dem Mikroskop betrachtet. Dabei werden wieder die Versetzungsstellen betrachtet und fotografiert
@@ -208,13 +253,15 @@ Um bei Messing und Stahl die Gefügestruktur zu untersuchen, müssen geeignete m
 
 Nun müssen die Legierungen geätzt werden, um anschließend im Mikroskop betrachtet zu werden. Nach jedem Ätzen müssen die Legierungen in Ethanol gereinigt werden um anschließend mit einem Heißluft-Föhn getrocknet zu werden. Diese Schritte werden wiederholt, bis die Bestandteile gut gesehen werden können:
 
-Messing in einem Ätzmittel aus \(\SI{100}{\milli\liter}\) Wasser, \(\SI{30}{\milli\liter}\) HCL und $5\,g$ FeCl\textsubscript{3} $25\,s$ geschwenkt, anschließend im Mikroskop fokussiert und ein Foto geschossen.
+Messing in einem Ätzmittel aus \(\SI{100}{\milli\liter}\) Wasser, \(\SI{30}{\milli\liter}\) HCl und $5\,g$ FeCl\textsubscript{3} \(\SI{25}{\second}\) geschwenkt, anschließend im Mikroskop fokussiert und ein Foto geschossen.
 
-Stahl wird in einer $3\,\%$igen alkoholischen Salpetersäure \(\SI{10}{\second}\) geätzt und anschließend ebenfalls im Mikroskop fokussiert und ein Foto geschossen.
+Stahl wird in einer 3\,\%igen alkoholischen Salpetersäure \(\SI{10}{\second}\) geätzt und anschließend ebenfalls im Mikroskop fokussiert und ein Foto geschossen.
 
 \section{Analyse}
 
 \subsection{Silicium}
+
+Zunächst wird der Silicium-Einkristall betrachtet. Hier sollen die Versetzungsdichte sowie der Verkippungswinkel zwischen zwei Subkörnern bestimmt werden. Zunächst werden dafür die oben beschriebenen Bearbeitungsschritte am Einkristall ausgeführt. 
 
 \begin{figure}[ht] 
   \centering
@@ -223,7 +270,7 @@ Stahl wird in einer $3\,\%$igen alkoholischen Salpetersäure \(\SI{10}{\second}\
   \label{fig:sil112}
 \end{figure}
 
-Nach dem ersten Arbeitsschritt zeigt sich im Bild \ref{fig:sil112} unter 12.5-facher Vergrößerung eine erste grobe Struktur der Oberfläche. Dabei sind die hellen Flächen leichte Erhebungen, während die dunklen Linien Senken zwischen den Erhebungen sind. Zudem sind Schäden in der Oberflächenstrkutr zu erkennen, die wie Kerben aussehen.
+Nach dem ersten Arbeitsschritt zeigt sich im Bild \ref{fig:sil112} unter 12.5-facher Vergrößerung eine erste grobe Struktur der Oberfläche. Dabei sind die hellen Flächen leichte Erhebungen, während die dunklen Linien Senken zwischen den Erhebungen sind. Zudem sind Schäden in der Oberflächenstrkutr zu erkennen, die wie Kerben aussehen. Zu den Rändern des Bildes hin wird das Bild unscharf, was besonders gut in der oberen rechten Ecke zu erkennen ist. Bei dieser Unschärfe handelt es sich um einen Bildfehler der Kamera, der durch die Krümmung der Linse entsteht. Dieser Fehler wird in allen kommenden Bildern zu sehen sein.
 
 \begin{figure}[ht] 
   \centering
@@ -250,7 +297,7 @@ Mit einer stärkeren Vergrößerung in Bild \ref{fig:sil250} lässt sich erkenne
   \label{fig:sil350}
 \end{figure}
 
-Nach dem dritten und letzten Arbeitsschritt verändert sich das Aussehen nicht mehr grundlegend, wie in Bild \ref{fig:sil350} gesehen werden kann. Auffällig ist vor allem die Vergrößerung der unförmigen Kerben. 
+Nach dem dritten und letzten Arbeitsschritt verändert sich das Aussehen nicht mehr grundlegend, wie in Bild \ref{fig:sil350} gesehen werden kann. Auffällig ist vor allem die Vergrößerung der unförmigen Kerben. Hier konnte die Säure offenbar besonders gut den Kristall angreifen.
 
 \begin{figure}[ht] 
   \centering
@@ -259,11 +306,15 @@ Nach dem dritten und letzten Arbeitsschritt verändert sich das Aussehen nicht m
   \label{fig:linana}
 \end{figure}
 
-In diesem Bild wird auch die Analyse durchgeführt. Ein Ausmessen der Dreiecke mit einem Bildverarbeitungsprogramm ergibt, dass die Seitenlängen der Dreiecke zwischen \(\SI{4}{\micro\meter}\) und \(\SI{14}{\micro\meter}\) schwankt. Mit der Durchführung einer Linearanalyse gelangt man zu folgendem Schluss:
+Mit dem Bild nach dem letzten Arbeitsschritt wird auch die Analyse durchgeführt. Ein Ausmessen der Dreiecke mit einem Bildverarbeitungsprogramm ergibt, dass die Seitenlängen der Dreiecke zwischen \(\SI{4}{\micro\meter}\) und \(\SI{14}{\micro\meter}\) schwankt. Mit der Durchführung einer Linearanalyse gelangt man zu folgendem Schluss:
 \begin{align*}
 L_L = 0.0714
 \end{align*}
-Dies gilt dabei nur für das betrachtete Bild und nicht für den gesamten Kristall! Bei der Durchführung konnte beobachtetet werden, dass die meisten Stellen der einen betrachteten Oberflächen keinerlei Versetzungen aufweisen, die andere betrachtete Oberfläche besaß keine einzige Versetzung. Daher liegt der wahre Wert für L\textsubscript{L} viel geringer. In Bild \ref{fig:linana} kann die angewandte Methode der Linearanalyse nachvollzogen werden.
+Bei Durchführung einer Flächenanalyse mithilfe des Programms Fiji, bei der die Versetzungsflächen manuell markiert und dann die Pixelzahl ausgegeben wird, kommt man zu einem etwas anderen Ergebnis:
+\begin{align*}
+A_A = 0.0639
+\end{align*}
+Der Unterschied zwischen L\textsubscript{L} und A\textsubscript{A} ist mit etwa -10,5\,\% relativ groß, aber erwartbar, da die Linienanalyse eine Annäherung an die Flächenanalyse darstellt. Für eine genauere Bestimmung müsste das Gitter enger gewählt und generell beide Analysen mehrfach ausgeführt werden. Dabei gelten die berechneten Werte nur für das betrachtete Bild und nicht für den gesamten Kristall! Bei der Durchführung konnte beobachtet werden, dass die meisten Stellen von einer der zwei betrachteten Oberflächen keinerlei Versetzungen aufweisen, die andere betrachtete Oberfläche besaß keine einzige Versetzung. Daher liegen die wahren Werte für L\textsubscript{L} und A\textsubscript{A} viel geringer. In Bild \ref{fig:linana} kann die angewandte Methode der Linearanalyse nachvollzogen werden.
 
 \begin{figure}[ht] 
   \centering
@@ -272,7 +323,7 @@ Dies gilt dabei nur für das betrachtete Bild und nicht für den gesamten Krista
   \label{fig:verkippung}
 \end{figure}
 
-Zur Bestimmung des Verkippungswinkels zwischen den Subkörnern wird die unten im Bild erkennbare, kurze, gerade Linie von Versetzungen oben und unten vermessen, wie in Bild \ref{fig:verkippung} zu sehen ist. Zusätzlich wird die Zahl der an der Linie beteiligten Versetzungen bestimmt. Dann wird die Weglänge je Versetzung mit der Formel \ref{for:lversetzung} bestimmt.
+Als zweites wird der Verkippungswinkel zwischen zwei Subkörnern bestimmt. Dafür wird die unten im Bild erkennbare, kurze, gerade Linie von Versetzungen oben und unten vermessen, wie in Bild \ref{fig:verkippung} zu sehen ist. Zusätzlich wird die Zahl der an der Linie beteiligten Versetzungen bestimmt. Dann wird die Weglänge je Versetzung mit der Formel \ref{for:lversetzung} bestimmt.
 \begin{align}
 D_{Versetzung} = \frac{l_{oben} + l_{unten}}{2} \frac{1}{N_{Versetzungen}} \label{for:lversetzung}
 \end{align}
@@ -280,7 +331,7 @@ Das Ergebnis in Mikrometern lautet wie folgt:
 \begin{align*}
 D_{Versetzung} = \SI[separate-uncertainty = true]{1.9(4)}{\micro\meter}
 \end{align*}
-Der Burgersvektor $b_{Silizium}$ von Silicium wird mithilfe der Formel \ref{for:burgers} berechnet. Dabei wird genutzt, dass der Kristall, wie oben beschrieben, in (1,1,1)-Richtung gezogen wurde und Silizium eine Gitterkonstant von $a = \SI{5.430}{\angstrom}$ \cite[S.24]{kittel}. Somit gilt $h = k = l = 1$. Mit diesen beiden Werten und der Formel \ref{for:verkippung} kann der Verkippungswinkel bestimmt werden \cite[S.661]{kittel}.
+Der Burgersvektor $b_{Silizium}$ von Silicium wird mithilfe der Formel \ref{for:burgers} berechnet. Dabei wird genutzt, dass der Kristall, wie oben beschrieben, in (1,1,1)-Richtung gezogen wurde. Somit liegt der Burgers-Vektor in (1,1,0)-Richtung. Außerdem wird genutzt, dass Silicium eine Gitterkonstant von $a = \SI{5.430}{\angstrom}$ hat \cite[S.24]{kittel}. Mit diesen beiden Werten und der Formel \ref{for:verkippung} kann der Verkippungswinkel bestimmt werden \cite[S.661]{kittel}.
 \begin{align}
 b_{Silizium} = \frac{a_{Silizium}}{2}\sqrt{h^2+k^2+l^2} \label{for:burgers}
 \end{align}
@@ -289,15 +340,23 @@ b_{Silizium} = \frac{a_{Silizium}}{2}\sqrt{h^2+k^2+l^2} \label{for:burgers}
 \end{align}
 Man erhält folgende Ergebnisse:
 \begin{align*}
-b_{Silizium} = \SI{4.7025}{\angstrom}
+b_{Silizium} = \SI{3.8396}{\angstrom}
 \end{align*}
 \begin{align*}
-\Theta_{Verkippung} = \SI[separate-uncertainty = true]{0.0142(30)}{\degree}
+\Theta_{Verkippung} = \SI[separate-uncertainty = true]{0.0116(24)}{\degree}
 \end{align*}
 
-Dieser Verkippungswinkel ist sehr klein. Allerdings ist das Ergebnis auch nicht sehr genau, da die vermessene Linie von Versetzungen nur sehr klein war und deswegen die Mittelung über die Strecke einen großen Fehler erbringt. 
+Der Verkippungswinkel ist also sehr klein. Allerdings ist das Ergebnis nicht sehr genau, da die vermessene Linie von Versetzungen nur sehr klein war und deswegen die Mittelung über die Strecke einen großen Fehler erbringt. 
 
-\section{Fazit}
+\subsection{Messing}
+
+
+
+\subsection{Stahl}
+
+
+
+\section{Diskussion}
 
 \subsection{Silizium}
 
@@ -305,16 +364,23 @@ Dieser Verkippungswinkel ist sehr klein. Allerdings ist das Ergebnis auch nicht 
 L_L = 0.0714
 \end{align*}
 \begin{align*}
+A_A = 0.0639
+\end{align*}
+\begin{align*}
 \Theta_{Verkippung} = \SI[separate-uncertainty = true]{0.0142(30)}{\degree}
 \end{align*}
 
-Der untersuchte Silicium-Einkristall hat an der untersuchten Stelle eine Versetzungsdichte von 7,714\,\%. Dieser Wert liegt jedoch im Gesamtkristall weitaus niedriger. Um einen möglichst genauen Wert zu erhalten, müsste eine größere Fläche untersucht werden: Beispielsweise, indem die gesamte betrachtete Kristalloberfläche fotografiert und vermessen wird.
+Der untersuchte Silicium-Einkristall hat an der untersuchten Stelle eine Versetzungsdichte, die etwa zwischen 7,14\,\% und 6,39\,\% liegt. Diese Werte dürften über den gesamten Kristall betrachtet jedoch weitaus niedriger liegen, da hier eine Stelle mit sehr vielen Versetzungen betrachtet wurde, während auch Stellen ohne eine einzige Versetzung zu sehen waren. Um einen möglichst genauen Wert zu erhalten, müsste eine größere Fläche untersucht werden, beispielsweise, indem die gesamte betrachtete Kristalloberfläche fotografiert und vermessen wird. Ein weitaus geringerer Wert wird auch erwartet, weil sich die Güte von Einkristallen davon ableitet, wie viele Gitterfehler sie enthalten. Bei Silicium gilt: Je weniger desto besser, da die damit gebauten elektrischen Schaltungen äußerst sensibel sind.
 
-Der bestimmte Verkippungswinkel ist sehr gering. Leider ist das Ergebnis nur ungenau, denn die betrachtete Reihe an Versetzungen war nur sehr klein. Da sich auf der gesamten betrachteten Fläche keine bessere Linie fand, hätte der Versuch wiederholt werden müssen, bis eine längere und klarere Linie zu finden ist, um eine bessere Auswertung zu ermöglichen.
+Der bestimmte Verkippungswinkel ist sehr gering. Leider ist das Ergebnis nur ungenau, denn die betrachtete Reihe an Versetzungen war nur sehr klein. Da sich auf der gesamten betrachteten Fläche keine bessere Linie fand, hätte der Versuch wiederholt werden müssen, bis eine längere und klarere Linie zu finden ist, um eine bessere Auswertung zu ermöglichen. Dies konnte aus Zeitmangel jedoch nicht durchgeführt werden.
 
 \subsection{Messing}
 
 \subsection{Stahl}
+
+\subsection{Fazit}
+
+In diesem Versuch haben wir festgestellt, dass mithilfe von einfachen Methoden Gütegrade von verschiedenen Legierungen und auch von Einkristallen festgestellt werden können. Konkret haben wir gelernt, wie man Materialien für die Strukturuntersuchung präpariert, wie man Stufenversetzungen feststellt und wie man aus einem Auflichtbild einer Legierung deren Zusammensetzung erhält. 
 
 %------------------------
 
@@ -336,7 +402,8 @@ Der bestimmte Verkippungswinkel ist sehr gering. Leider ist das Ergebnis nur ung
 	20:45 Uhr	
 	
 \bibitem{bild-ra}
-  http://www.ahoefler.de/images/maschinenbau/werkstoffkunde/eisen\_kohlenstoff\_diagramm/C45.png
+  http://www.ahoefler.de/images/maschinenbau/werkstoffkunde/eisen\_
+	kohlenstoff\_diagramm/C45.png
 	12.11.2016
 	22:35 Uhr	
 	
@@ -356,6 +423,27 @@ Der bestimmte Verkippungswinkel ist sehr gering. Leider ist das Ergebnis nur ung
   https://en.wikipedia.org/wiki/Burgers\_vector
 	23.11.2016
 	14:45 Uhr
+	
+\bibitem{gitterfehler2}
+  https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Versetzung\_im\_2D-Kristall.svg/2000px-Versetzung\_im\_2D-Kristall.svg.png
+	24.11.2016
+	13:30 Uhr
+	
+\bibitem{versetzung}
+  https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Point\_defects\_in
+	\_crystal\_structures\_DE.svg/2000px-Point\_defects\_in\_crystal\_structures\_DE.svg.png
+	24.11.2016
+	13:30 Uhr	
+	
+\bibitem{kubisch}
+  http://download.e-bookshelf.de/download/0004/0065/09/L-X-0004006509-0002546546.XHTML/images/Ch2\_img\_7\_3.jpg
+	24.11.2016
+	13:40 Uhr
+	
+\bibitem{miller}
+  http://www.iue.tuwien.ac.at/phd/dhar/img173.png
+	24.11.2016
+	14:00 Uhr
 
 \end{thebibliography}
 
